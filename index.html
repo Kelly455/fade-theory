@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade Theory Barbers | Atlanta, GA</title>
+  <meta name="description" content="Haircuts, beard trims and fades in Atlanta. Request your appointment online.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>">
+  <link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <a href="#top" class="logo">Fade Theory</a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#visit">Visit</a>
+      <a href="#book" class="btn">Book</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Sharp cuts. Easy booking.</h1>
+      <p>Fades, trims and beard work in Atlanta. Request your slot in under a minute.</p>
+      <a href="#book" class="btn">Book Now</a>
+    </section>
+
+    <div class="split">
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <div class="service-grid">
+        <article class="service">
+          <h3>Haircut</h3>
+          <p class="price">$30</p>
+        </article>
+        <article class="service">
+          <h3>Beard Trim</h3>
+          <p class="price">$15</p>
+        </article>
+        <article class="service">
+          <h3>Haircut + Beard</h3>
+          <p class="price">$40</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="book" class="book">
+      <h2>Request an Appointment</h2>
+      <form id="bookingForm" class="booking-form" action="https://formspree.io/f/mrppvrlo" method="POST" novalidate>
+
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email" autocomplete="email">
+
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="">Choose a service</option>
+          <option value="Haircut ($30)">Haircut ($30)</option>
+          <option value="Beard Trim ($15)">Beard Trim ($15)</option>
+          <option value="Haircut + Beard ($40)">Haircut + Beard ($40)</option>
+        </select>
+
+        <label for="date">Preferred date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred time</label>
+        <select id="time" name="time" required>
+          <option value="">Choose a time</option>
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="5:00 PM">5:00 PM</option>
+        </select>
+
+        <!-- Honeypot: humans never see this; bots fill it and Formspree drops the submission -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+        <input type="hidden" name="_subject" value="New booking request: Fade Theory">
+
+        <p class="form-error" id="formError" role="alert" hidden></p>
+        <button type="submit" class="btn" id="submitBtn">Send Request</button>
+        <p class="form-success" id="formSuccess" role="status" hidden></p>
+      </form>
+    </section>
+
+    <section id="visit" class="visit">
+      <h2>Visit Us</h2>
+      <p>456 Sample Avenue, Atlanta, GA 30303</p>
+      <p>Tue–Sat, 9am–6pm · Closed Sun and Mon</p>
+      <p class="note">Demo project. Address and hours are placeholders.</p>
+    </section>
+  </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Fade Theory Barbers. Demo project.</p>
+  </footer>
+
+</body>
+</html>
