@@ -4,6 +4,8 @@ Booking-request website for a fictional Atlanta barbershop. Built with plain HTM
 
 **Goal of the page:** let a customer request an appointment, and deliver the request to the shop owner's email.
 
+**Live site:** https://kelly455.github.io/fade-theory/
+
 ## Features
 - Mobile-first responsive layout (checked at 375px, 800px and 1440px)
 - Booking form sending to Formspree, which emails the owner
